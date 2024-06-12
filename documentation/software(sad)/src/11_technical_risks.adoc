@@ -3,14 +3,7 @@
 
 === Risiken
 
-Die allgemeinen Risiken des Projektes wurden in einer https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt5/pages/142704676/Risikoliste+V3[Risikoliste] zusammengeführt.
-Folgend werden die technischen Risiken aus dieser Liste genauer aufgezeigt.
-
-[cols="1,3,3" options="header"]
-|===
-| Risiko | Beschreibung | Massnahmen
-| Collision ist nicht so gut | Die aktuelle Collision hat gewisse Probleme, da sie nicht immer konsistent ist. Es kommt dazu wegen fehlenden Funktionalitäten von Pi4J. | Unser Fokus liegt jetzt daran die Collision zu verbessern, da die restliche Hauptfunktionalität bereits vorhanden ist. 
-|===
+Da das Projekt erfolgreich beendet wurde, bestehen keine technischen Risiken mehr.
 
 === Technische Schulden
 
