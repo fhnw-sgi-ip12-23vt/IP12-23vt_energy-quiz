@@ -2,10 +2,11 @@
 == Lösungsstrategie
 
 Das EnergieQuiz ist eine Java Applikation, welche mit Processing und Pi4J realisiert wurde und auf einem Raspberry Pi deployed wurde. Es zerfällt grob in folgende Teile:
- - Die grafische Darstellung mit Processing
- - Das Input Handling mit Pi4J
- - Einen FileReader für die JSON und CSV Dateien
- - Mehrere Objekte für die Gamelogik
+
+- Die grafische Darstellung mit Processing
+- Das Input Handling mit Pi4J
+- Einen FileReader für die JSON und CSV Dateien
+- Mehrere Objekte für die Gamelogik
 
 Die folgende Tabelle stellt die Qualitätsziele und die Lösungsansätze zur Umsetzung der Ziele dar.
 
