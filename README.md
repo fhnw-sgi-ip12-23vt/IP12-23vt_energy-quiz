@@ -32,6 +32,8 @@ Nachdem man nun das gezippte Projekt hat, muss man die Zip-Datei einfach auf den
 
 Dann muss man die Datei einfach mit `unzip project.zip` entpacken. Dann `A` eingeben (falls bereits eine Version des Projekts auf dem Raspberry Pi ist.) und schließlich den Raspberry Pi neu starten.
 
+Danach startet das Projekt automatisch im Full Screen Modus. Falls dies nicht passiert, kann man einfach den Raspberry Pi rebooten.
+
 ## Einrichten des Raspberry pi
 
 1. Raspberry Pi OS Bookworm x64bit installieren
@@ -73,7 +75,7 @@ Die JSON-Struktur wird [hier](https://gitlab.fhnw.ch/ip12-23vt/energiequiz/energ
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | type                | Gibt an ob die Frage eine Sortierfrage oder eine Frage mit nur einer korrekten Antwort ist. 0: Standart, 1: Sortierfrage                                      |
 | question            | Die Quizfrage (max 130 Zeichen)                                                                                                                             |
-| explanationSorting | Erklärung, weshalb die Antworten korrekt sortiert sind (max. 900 Zeichen)                                                                                                      |
+| explanation | Erklärung, weshalb die Antworten korrekt sortiert sind (max. 900 Zeichen)                                                                                                      |
 | explanation1        | Erklärung, warum Antwort 1 falsch bzw. korrekt ist (max. 900 Zeichen)                                                                                       |
 | explanation2        | Erklärung, warum Antwort 2 falsch bzw. korrekt ist (max. 900 Zeichen)                                                                                       |
 | explanation3        | Erklärung, warum Antwort 3 falsch bzw. korrekt ist (max. 900 Zeichen)                                                                                       |
