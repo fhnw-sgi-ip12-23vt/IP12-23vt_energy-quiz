@@ -1,0 +1,52 @@
+[[section-design-decisions]]
+== Architekturentscheidungen
+
+=== ADR 1: UI Library
+
+==== Kontext
+
+Da es sich bei dem Projekt um ein Spiel handelt, ist es notwendig, dass ein UI den Spieler angezeigt wird. Dieses UI muss mit schnellen Veränderungen klar kommen, um die Bewegung des Spielers darzustellen. Es muss aber keine besonders hohe Leistung vorhanden sein, da es sich beim Spiel um ein Quiz mit Escape-Room-Elementen handelt udn somit keine grossen Veränderungen auf dem Bildschirm angezeigt werden müssen.
+
+==== Entscheidung
+
+Es wurde entschieden, das UI mit der Java-Bibliothek Processing umzusetzen. Dies wurde so entschieden, da diese Bibliothek von einigen der Dozenten für ein Arcade-Spiel empfohlen wurde. Zudem wurde nach dem Auseinandersetzen mit der Bibliothek klar, dass deren Verwendung realtiv simpel ist und somit die Implementierung keine unnötige Komplexität besitzen wird.
+
+==== Status - Akzeptiert
+
+==== Konsequenzen
+
+Die gesammte View der Applikation wird um diese Bibliothek herum geschrieben. Dadurch gibt es eine klare Abhängigkeit an diese Bibliothek. Zusätzlich ist Processing nicht die performanteste Bibliothek, was zu einer tieferen Leistung und tieferen FPS führen kann. Dies sollte aber noch akzeptabel sein, da für diese Art von Spiel keine besonders hohe FPS-Anzahl vorhanden sein muss.
+
+=== ADR 2: Speichern der Spiel-Informationen
+
+==== Kontext
+
+Eine der Anforderungen an das Projekt, ist die Modifizierbarkeit des Spiels. Da es sich hierbei um ein Quiz handelt, heisst das, dass die Quizfragen einfach anpassebar sein sollten. Zudem sollten auch die Räume, die darin enthaltenen Geräte und deren Stromverbrauch anpassbar sein. Dies soll auf einem möglichst simplen und verständlichen Weg geschehen können.
+
+==== Entscheidung
+
+Um die Spiel-Informationen klar und verständlich abzuspeichern, wurde entschieden auf ein bewährtes Format zu setzen. Deswegen sollten diese Informationen im JSON-Format gespeichert werden. Dieses hat eine klare Struktur, welche das Lesen und das Verändern der Datei vereinfacht. Auch das Auslesen der Datei wird mit dem JSON-Format einfach machbar.
+
+==== Status - Akzeptiert
+
+==== Konsequenzen
+
+Das Auslesen der Datei im Programm wird dadurch einfach implementiert. Für das verstehen und verändern der Datei müssen natürlich gewisse Vorkenntnisse mit dem JSON-Format vorhanden sein, sie sind aber nicht besonders kompliziert.
+Bei der Veränderung der JSON-Datei muss natürlich auch darauf geachtet werden, dass die Bennenung der Attribute weiterhin dem gleichen Format folgt, wie schon im Code definiert.
+
+=== ADR 3: Library von Processing auf FXGL wechseln
+
+==== Kontext
+Wir hatten einige Probleme mit niedriger Framerate auf dem Raspberry Pi. Die Processing Library ist nicht für solche Videospiele ausgelegt.
+
+==== Entscheidung
+Wir haben uns dazu entschieden die Library von Processing auf FXGL zu wechseln.
+Dies sollte zu einer besseren Leistung führen, da FXGL für Videospiele ausgelegt ist und somit optimaler die Bilder laden kann.
+Ausserdem lasst sich mithilfe von JavaFX das UI viel einfacher erstellen.
+
+==== Status - Akzeptiert
+
+==== Konsequenzen
+Das Spiel sollte flüssiger laufen. Ausserdem kann das UI viel einfacher mithilfe von .fxml Dateien angepasst werden.
+Die Konsequenz ist, dass dieser Wechsel mit viel Zeitaufwand verbunden ist, da die gesamte Darstellung neu erstellt werden muss.
+Aktuell läuft das Spiel noch nicht auf dem Raspberry Pi, da es nicht ausgeführt werden kann.

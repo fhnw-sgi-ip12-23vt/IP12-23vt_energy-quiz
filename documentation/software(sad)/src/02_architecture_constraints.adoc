@@ -1,0 +1,34 @@
+[[section-architecture-constraints]]
+== Randbedingungen
+
+=== Technische Randbedingungen
+[cols="1,1" options="header"]
+|===
+| Randbedingungen | Erläuterungen, Hintergrund 
+| Implementierung in Java | Die Software basiert auf Java und verwendet die Bibliotheken "FXGL" und "Pi4J". Die Verwendung von Java ist eine der Vorgaben der FHNW. Die Verwendung der beiden Bibliotheken basiert auf den Empfehlungen der FHNW und der eigenen Recherche nach Alternativen. 
+| Betrieb auf Raspberry Pi | Die Software läuft auf einem Raspberry Pi 4 und kommuniziert darüber mit der angeschlossenen Hardware. Dies ist eine weitere Vorgabe der FHNW.
+| Konfigurationsdatei | Es soll eine Konfigurationsdatei vorhanden sein, damit Fragen und die Sprache der Fragen leicht von den Kunden bei Primeo angepasst werden können.
+|===
+
+=== Organisatorische Randbedingungen
+[cols="1,1" options="header"]
+|===
+| Randbedingungen | Erläuterungen, Hintergrund 
+| Team | Das Team mit ihren Rollen kann https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt5/overview[hier] gefunden werden 
+| Zeitplan | Der geplante Ablauf des Projekts ist https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt5/pages/108232913/Zeitstrahl[hier] dokumentiert.
+| Vorgehensmodell | Das Projekt basiert auf dem RUP-Modell. Zur Dokumentation der Architektur wird nach arc42 gehandelt. 
+| Entwicklungswerkzeuge | Entwürfe werden mit astah und Miro erstellt. Zur Entwicklung wird IntelliJ verwendet. Es muss aber möglich sein die Applikation ohne jegliche IDE und nur mit Maven zu bauen.
+| Versionsverwaltung | Zur Versionsverwaltung des Codes und der Softwarearchitektur-Dokumente wird ein Repository auf Gitlab verwendet. Für andere Dokumente, wird Confluence zur Versionsverwaltung eingesetzt. 
+| Testwerkzeuge und Testprozesse | Für das Testen des Codes wird die JUnit-4 Bibliothek im Projekt verwendet. Diese werden zur Einhaltung der Anforderungen und zur Erreichung der Qualitätsziele verwendet. Zu den automatisierten Unit-Tests werden noch manuell durchgeführte User-Acceptance-Tests durchgeführt. Das Protokoll zu diesen kann https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt5/pages/142704703/Testing[hier] gefunden werden.
+|===
+
+=== Konventionen
+[cols="1,1" options="header"]
+|===
+| Konvention | Erläuterungen, Hintergrund 
+| Architekturdokumentation | Gegliedert nach dem arc42-Standard und basierend auf dem arc42-Template.
+| Kodierungsrichtlinien | Der Code wird nach den https://gitlab.fhnw.ch/ip12-23vt/energiequiz/docu/-/blob/main/coding_conventions.adoc?ref_type=heads[hier] definierten Richtlininen erstellt.
+| Datenspeicherungsrichtlinien | Daten welche persistiert werden sollen, wie die Quizfragen, werden in der **J**ava **S**cript **O**bject **N**otation (JSON) gespeichert.
+| Sprache (Deutsch vs Englisch) | Das UI wird standardmässig auf Deutsch bereitgestellt, wird aber so implementiert, dass durch eine einfache Änderung die Sprache angepasst werden kann. Die Klassennamen im Code und die Kommentare dazu werden auf Englisch geführt. Jegliche andere Dokumentation wird aber auf Deutsch gehalten um keine Verständnisprobleme zu erzeugen.
+|===
+

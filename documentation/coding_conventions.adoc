@@ -1,0 +1,11 @@
+= Coding Conventions
+
+== Verwendete Konventionen
+
+Für das Projekt werden die https://google.github.io/styleguide/javaguide.html[Coding Conventions von Google] verwendet.
+
+Alle Klassen und Methoden werden nach JavaDoc kommentiert. Als Anleitung kann diese Seite verwendet werden https://www.baeldung.com/javadoc[JavaDoc Erklärung]
+
+== Sicherstellung der Einhaltung der Konventionen
+
+Es wird sichergestellt, dass die Konventionen eingehalten werden durch das regelmässige Durchführen von Code Reviews. Diese werden alle 2 Wochen beim Wöchentlichen Team-Meeting durchgeführt. Damit können sowohl die Konventionen und die Architektur überprüft werden, als auch das allgemeine Code-Verständniss des Teams verstärkt werden.

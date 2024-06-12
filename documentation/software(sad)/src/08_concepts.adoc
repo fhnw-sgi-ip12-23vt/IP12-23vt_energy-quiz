@@ -1,0 +1,40 @@
+[[section-concepts]]
+== Querschnittliche Konzepte
+
+=== Konfigurierbarkeit
+
+Die Techniker bei Primeo wollen für ihre Ausstellung gewisse Teile des Spiels anpassen können.
+
+Da es sich bei dem Projekt um eine Art von Quiz-Spiel handelt, gibt es einge Fragen, welche für das Quiz verwendet werden. Diese Fragen müssen je nach Niveau der Besucher eventuell angepasst werden. Denn eine Primarschulklasse und eine Sekundarschulklasse werden einen unterschiedlichen Wissensstand besitzen.
+
+Deswegen werden die Fragen für das Projekt in eine separate JSON-Datei abgelegt. Aus dieser werden die Fragen bei der Initialisierung des Spiels herausgelesen, wie in der https://gitlab.fhnw.ch/ip12-23vt/energiequiz/docu/-/blob/main/software(sad)/EnergieQuizSAD.adoc?ref_type=heads#user-content-whitebox-file-handler[Bausteinsicht Ebene 2 - FileHandling] beschrieben.
+
+Neben den Fragen werden auch die möglichen Räume und Objekte in den Räumen in einer JSON-Datei gespeichert. Diese können also auch ohne Probleme erweitert, entfernt und angepasst werden.
+
+=== Benutzeroberfläche
+
+Um mit einem Spiel wirklich interagieren zu können, wird eine Art von Benutzeroberfläche benötigt. Diese kann in vielen Formen vorhanden sein. In diesem Projekt wird das GUI mithilfe von JavaFX FXMLs und der Bibliothek FXGL umgesetzt.
+
+Für diese Benutzeroberfläche wurden zuerst Skizzen und Wireframes erstellt und anhand diesen wurde das UI für den Prototypen umgesetzt. Der Wireframe kann https://www.figma.com/proto/QHRUlDBRW92mBKoONonUb5/Untitled?node-id=11-6&starting-point-node-id=11%3A6[hier] gefunden werden.
+
+Dieses UI wurde nach den Resultaten der Usability-Tests mit der Zielgruppe nochmals weiter überarbeitet. https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt5/pages/63997316/Usability+Dossier#Entwicklung.1[Hier] ist die genaue Entwicklung des UIs zu sehen, damit die Benutzerfreundlichkeit gewährleistet werden kann.
+
+=== Persistenz
+
+Am Ende der Game-Loop wird eine Punktzahl für die Spieler berrechnet anhand der übrig gebliebenen Zeit. Diese Punktzahl wird am Schluss in einem Leaderboard mit zufällig generierten Namen angezeigt.
+
+Diese Punktzahlen dürfen natürlich nicht einfach weg sein, wenn das System neu gestartet wird. Denn dann kann kein brauchbares Leaderboard angezeigt werden.
+
+Um dies umzusetzen werden die Informationen zu den Punktzahlen auf der Hardware persistiert, indem sie in eine CSV-Datei abgespeichert werden und bei der Darstellung des Leaderboards wieder ausgelesen. Um hierbei noch zu verhindern, dass der Platz auf der Festplatte des Raspberry Pi zu voll wird, werden nur die höchsten 5 Punktzahlen zusammen effektiv persistiert.
+
+=== Optimierung
+
+Bei einem Spiel ist es sehr wichtig, dass das Spiel mit einer gewissen Geschwindigkeit und Flüssigkeit funktioniert.
+
+In der ersten Phase der Entwicklung kam es bei diesem Punkt zu Problemen. Denn beim Laden der Assets in den Räumen kam es zu Leistungsproblemen. In gewissen Situationen konnten 1-2 FPS gemessen werden, was ganz klar nicht für das Spiel tauglich ist.
+
+Deswegen wurden noch Optimierungen am Projekt vorgenommen, um die FPS-Anzahl zu steigern. Es wurde beim Laden der Grafiken die meiste Optimierung vorgenommen, indem diese Grafiken nur einmal aus der Datei ausgelesen und skaliert werden. Dadurch konnten die FPS auf dem Raspberry Pi auf konstante 12-13 erhöht werden, was für diese Art von Spiel als adäquat angesehen wird.
+
+Nach diesen Optimierungen wurde das Projekt dann auf dem Raspberry Pi, über zwei Bildschirme im Vollbild getestet. Dabei kam es wieder zu einer Framerate von 1-2 FPS. Deswegen wurde das Projekt mithilfe von der Spielebibliothek "FXGL" neu geschrieben, da von einem anderen Team gezeigt wurde, dass es bei ihnen nicht zu Leistungsproblemen gekommen ist.
+
+Nach dieser neuen Implementierung und einer Anpassung der Auflösung der Bildschirme, gibt es im Spiel zwischen 40-50 FPS, was für ein Spiel wie unseres, mehr als genügend ist und somit auch eine gewisse Qualität aufweisen kann.

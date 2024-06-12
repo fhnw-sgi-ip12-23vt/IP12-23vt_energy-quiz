@@ -1,0 +1,71 @@
+[[section-glossary]]
+== Glossar
+
+[cols="e,2e" options="header"]
+|===
+|Begriff |Definition
+
+|ADR
+|Ein Architecture Decision Record (ADR) ist ein Dokument, das eine wesentliche Architekturentscheidung zusammen mit ihrem Kontext und ihren Konsequenzen festhält. ADRs werden in der Softwareentwicklung genutzt, um wichtige Entscheidungen, die während des Entwicklungsprozesses getroffen wurden, zu dokumentieren und zu kommunizieren.
+
+Jeder ADR enthält üblicherweise eine kurze Beschreibung des Problems oder der Anforderung, die die Entscheidung erforderlich machte, eine Darstellung der getroffenen Entscheidung selbst, eine Diskussion alternativer Optionen, die in Betracht gezogen wurden, sowie die Begründung für die Wahl der letztendlich getroffenen Entscheidung. Darüber hinaus können ADRs Informationen zu den erwarteten Konsequenzen und Auswirkungen der Entscheidung enthalten, sowie mögliche Risiken und Vorsichtsmaßnahmen, die im Zusammenhang mit der Entscheidung stehen.
+
+ADRs können als Teil der Projekt- oder Systemdokumentation aufbewahrt und bei Bedarf zur Überprüfung oder Überarbeitung der Architektur herangezogen werden.  
+
+Siehe auch https://adr.github.io/
+
+|arc42
+|arc42 ist ein Standard zur Dokumentation der Softwarearchitektur. Es bietet eine Vorlage für die Strukturierung und Beschreibung der Architekturen von Softwaresystemen. Es unterteilt die Dokumentation in zwölf Abschnitte, die verschiedene Aspekte der Softwarearchitektur abdecken. arc42 ist technologie- und werkzeugunabhängig und kann in Projekten unterschiedlicher Grösse und mit verschiedenen Methodologien verwendet werden.
+
+Siehe auch https://docs.arc42.org/home/
+
+|ATAM
+|Architecture Tradeoff Analysis Method (ATAM) ist eine Methode zur Bewertung der Softwarearchitektur in Bezug auf Qualitätseigenschaften wie Performance, Sicherheit und Wartbarkeit. Sie hilft dabei, Kompromisse und Auswirkungen von Architekturentscheidungen aufzudecken und zu analysieren. Durch ATAM können Architekten und Stakeholder die Vor- und Nachteile bestimmter Designentscheidungen verstehen und fundierte Entscheidungen treffen.
+
+Siehe auch https://insights.sei.cmu.edu/documents/629/2000_005_001_13706.pdf und https://en.wikipedia.org/wiki/Architecture_tradeoff_analysis_method
+
+|Blackbox
+|Als Blackbox wird in der Bausteinsicht eine Ansicht eines einzelnen Baustein bezeichnet, bei welchem man keinen Einblick in den Aufbau dieses Bausteins selbst hat.
+
+|BPMN
+|BPMN ist ein grafisches Notationssystem zur Darstellung von Geschäftsprozessen in einem Geschäftsprozessdiagramm. Es wird häufig verwendet, um Arbeitsabläufe, Geschäftsprozesse und komplexe Aktivitäten in einer leicht verständlichen, standardisierten Form darzustellen.
+
+Siehe auch https://www.omg.org/spec/BPMN/ oder https://de.wikipedia.org/wiki/Business_Process_Model_and_Notation
+
+|EPK
+|Ereignisgesteuerte Prozesskette (EPK) ist eine Methode zur Darstellung von Geschäftsprozessen. Sie wird häufig im Bereich des Geschäftsprozessmanagements verwendet und eignet sich besonders zur Darstellung der logischen Abläufe von Prozessen und deren Abhängigkeiten.
+
+Siehe auch https://de.wikipedia.org/wiki/Ereignisgesteuerte_Prozesskette
+
+|FPS
+|FPS steht für Frames Per Second und ist ein Mass für die Bildwiederholrate in Videoanwendungen und Spielen. Es gibt an, wie viele Einzelbilder (Frames) pro Sekunde dargestellt werden. Eine höhere FPS-Zahl führt in der Regel zu einer flüssigeren und angenehmeren visuellen Erfahrung, insbesondere bei Videospielen.
+
+|Mockups
+|Mockups sind visuelle Darstellungen des Designs eines Produkts, insbesondere von Websites oder Softwareanwendungen. Sie dienen dazu, das Aussehen und das Grundlayout eines Produkts zu demonstrieren, ohne dass es vollständig funktionsfähig ist.
+
+|MVC
+|Model-View-Controller (MVC) ist ein Architekturmuster in der Softwareentwicklung, das die Anwendung in drei miteinander verbundene Teile unterteilt, um die Wartbarkeit und Skalierbarkeit zu verbessern. Das Modell (Model) enthält die Geschäftslogik und Daten, die Ansicht (View) ist verantwortlich für die Darstellung der Daten, und der Controller verarbeitet Eingaben, interagiert mit dem Modell und aktualisiert die Ansicht.
+
+Siehe auch https://de.wikipedia.org/wiki/Model_View_Controller
+
+|Persistenz
+|In der Softwareentwicklung bezieht sich Persistenz auf die Eigenschaft von Daten, über die Laufzeit der Anwendung hinaus zu bestehen. Persistente Daten werden in einer Form gespeichert, die es ihnen ermöglicht, über Prozessneustarts oder Systemausfälle hinweg erhalten zu bleiben, typischerweise in Datenbanken oder Dateisystemen.
+
+|resources
+|Im Kontext der Softwareentwicklung beziehen sich „resources“ (Ressourcen) auf Dateien und Daten, die von einer Anwendung genutzt werden, aber nicht direkt Teil des ausführbaren Codes sind. Dazu gehören Bilder, Konfigurationsdateien, Textdateien, Lokalisierungsdaten und andere externe Inhalte.
+
+|RUP
+|Der Rational Unified Process (RUP) ist ein iterativer Softwareentwicklungsprozess und benutzt die Unified Modeling Language (UML) als Notationssprache. Der Prozess ist in vier Phasen unterteilt: Inception (Konzeption), Elaboration (Ausarbeitung), Construction (Konstruktion) und Transition (Übergang). Jede dieser Phasen ist in eine oder mehrere Iterationen unterteilt und resultiert in einem Meilenstein.
+
+Siehe auch https://de.wikipedia.org/wiki/Rational_Unified_Process
+
+|UML
+|Die Unified Modeling Language (UML) ist eine standardisierte Modellierungssprache in der Softwaretechnik. Sie wird verwendet, um Software- und andere Systeme zu visualisieren, zu spezifizieren, zu konstruieren und zu dokumentieren. UML ist keine Programmiersprache, sondern eine Reihe von Diagrammen und Symbolen, die dazu dienen, die Struktur und das Verhalten von Systemen zu beschreiben.
+
+UML umfasst verschiedene Arten von Diagrammen, die die statische Struktur des Systems zeigen, sowie Verhaltensdiagrammen, die das Verhalten und die Interaktion von Systemelementen darstellen. Sie ist in der Softwareentwicklung weit verbreitet und wird in vielen verschiedenen Methoden und Prozessen, einschließlich des Rational Unified Process (RUP), verwendet. UML dient als gemeinsame Sprache für Softwarearchitekten, -entwickler, -ingenieure und -analysten zur Kommunikation, Planung und Dokumentation von Systemstrukturen und -abläufen.
+
+Siehe auch https://de.wikipedia.org/wiki/Unified_Modeling_Language
+
+|Whitebox
+|Als Whitebox versteht man in der Bausteinsicht einen Baustein, bei welchem man sehen kann, wie genau dieser aufgebaut ist und somit tiefer in den Gesamtaufbau hinein sehen kann.
+|===

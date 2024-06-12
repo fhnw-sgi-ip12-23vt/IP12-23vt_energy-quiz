@@ -1,0 +1,22 @@
+= Git Guide
+
+== Genereller Workflow
+
+1. Änderungen treffen
+2. git checkout branch-name
+3. git pull
+4. git commit -m "Commit-Message"
+5. git push
+
+== Branching
+
+Für jedes Arbeitspaket wird mindestens 1 Branch auf Gitlab erstellt. Wenn mehr als eine Person an diesem Arbeitspaket arbeitet, soll die Aufgabe in 2 kleinere, unabhängige Aufgaben aufgeteilt werden. Für beide dieser Teile werden dann eigene Branches erstellt.
+
+Branches werden nach folgendem Namensschema erstellt:
+
+`Arbeitspaketid-Beschreibung_der_Aktivität`
+
+Branches werden immer mit dem Develop-Branch als Source erstellt. Branches können https://gitlab.fhnw.ch/ip12-23vt/energiequiz/energiequiz/-/merge_requests/new[hier] erstellt werden.
+
+Danach muss in der IDE ein `git fetch` und ein `git checkout` durchgeführt werden.
+

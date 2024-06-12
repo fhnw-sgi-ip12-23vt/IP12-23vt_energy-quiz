@@ -1,0 +1,49 @@
+[[section-introduction-and-goals]]
+==	Einführung und Ziele
+
+Dieser Abschnitt dient zur Einführung in die Aufgabenstellung und erläutert die Ziele vom EnergieQuiz. 
+
+
+=== Aufgabenstellung
+
+Beim Projekt des Energiequizzes handelt es sich um ein Multiplay-Arcade-Spiel.
+Das Projekt dient dem näher bringen von Energieverbauchsbewusstsein einer jugendlichen Zielgruppe.
+Durch ein interessantes Spielerlebnis sollen jugendliche neben dem Lernen auch noch spass haben
+
+Die genaueren Anforderungen des Projekts wurden auf Confluence, unter dem folgenden Link dokumentiert:
+https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt5/pages/63997213/Requirements[Anforderungsdokument]
+
+
+=== Qualitätsziele
+
+[cols="1,1" options="header"]
+|===
+|Qualitätsziel |Motivation und Erläuterung
+| *Stabilität:* |
+Die Software soll flüssig und ohne Abstürze laufen, selbst nach mehr als 20 Stunden laufzeit. Zusätzlich sollte die Hardware auch genug Stabilität besitzen, so dass man auf die Knöpfe hauen kann, ohne dass die Hardware kapputt geht.
+| *Bedienbarkeit:* | 
+Die Software soll für den Benutzer leicht bedienbar sein, so dass dieser sich innerhalb von einer Minute mit dem System zurecht findet. 
+Dies ist besonders wichtig, da für die Ausstellung des Produktes eine Nutzungszeit von 1-3 Minuten gewünscht wird.
+| *Modifizierbarkeit:*|  
+Die Quizfragen und jegliche anderen Texte in der Software müssen durch das Verändern von einer Datei vom Kunden anpassbar sein, da sie die Sprache des Spiels anpassen wollen und eventuell auch weitere Fragen hinzufügen wollen.
+| *Funktionalität:* |
+Die Software muss wiederholt funktionieren ohne grössere Fehler zu verursachen.
+Die https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt5/pages/63997213/Requirements[hier] definierten Funktionalitäten müssen in der Endversion des Systems vorhanden sein. 
+| *Nachhaltigkeit:* | 
+Die verwendete Hardware des Systems soll so nachhaltig wie möglich sein, ohne die Funktionalität und die Qualität des Systems zu beeinträchtigen. Es soll also so viel leicht gebrauchtes Material wie möglich verwendet werden.
+|===
+
+
+=== Stakeholder
+
+[cols="1,1,2" options="header"]
+|===
+|Rolle |Kontakt |Erwartungshaltung
+| Product Owner | Prof. Dr. Andreas Vogt, andres.vogt@fhnw.ch | Das Produkt sollte die Anfoderungen der FHNW und bestmöglich die Anforderung von Primeo erfüllen.
+| Primeo | Wolgang Szabbó, W.szabo@primeo-energie.ch | Möchte ein Produkt für ihre Austellung. https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt/pages/27132505/IP12+-+Technische+Rahmenbedingungen[Anforderungen],  
+| Techniker | E. Weber e.weber@primeo-energie.ch | Die Spielkonsole soll einfach zu warten sein. Ein Zugang für den Techniker sollte zur Verfügung stehen.
+| FHNW | Samuel Fricker, samuel.fricker@fhnw.ch | Die FHNW gibt Anforderungen gegenüber der Architektur, welche eingehalten werden müssen. https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt/pages/27132505/IP12+-+Technische+Rahmenbedingungen[Anforderungen]
+| Team | SA - Daniel Zimmerli, daniel.zimmerli@students.fhnw.ch oder PM - Dario Müller, dario.mueller@students.fhnw.ch | Verstehen die Architektur und sind für deren Planung und umsetzung zuständig.
+|===
+
+Eine detailiertere Übersicht der Stakeholder kann https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt5/pages/63997278/Stakeholder+Management#Produkt-Stakeholder[hier] gefunden werden.
