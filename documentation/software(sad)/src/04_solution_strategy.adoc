@@ -15,22 +15,22 @@ Die folgende Tabelle stellt die Qualitätsziele und die Lösungsansätze zur Ums
 | Stabilität
 | Das Produkt wird ausgestellt und muss daher sowohl Hardware- als auch Softwaretechnisch stabil sein.
 | Die Software wird vor dem Mergen jedes Features streng getestet.
-| Es besteht eine Gitlab Pipeline, welche automatisiert die Unit-Tests durchführt. Zusätzlich werden vor jedem Release noch manuelle Tests anhand eines Skriptes durchgeführt, wie bereits https://gitlab.fhnw.ch/ip12-23vt/energiequiz/docu/-/blob/main/software(sad)/EnergieQuizSAD.adoc?ref_type=heads#user-content-organisatorische-randbedingungen[hier] beschrieben.
+| Es besteht eine Gitlab Pipeline, welche automatisiert die Unit-Tests durchführt. Zusätzlich werden vor jedem Release noch manuelle Tests anhand eines Skriptes durchgeführt, wie bereits https://github.com/fhnw-sgi-ip12-23vt/IP12-23vt_energy-quiz/blob/main/documentation/software(sad)/src/02_architecture_constraints.adoc#organisatorische-randbedingungen[hier] beschrieben.
 
 | Bedienbarkeit
 | Bei der Ausstellung haben die Spieler 2-3 Minuten zeit um die Applikation zu verwenden. In dieser kurzen Zeit müssen die Spieler das System verwenden können.
 | Um die Software so verständlich wie möglich zu halten, werden Umfragen und Tests mit der Zielgruppe durchgeführt. Zusätzlich werden die Inputs so simpel wie möglich gehalten
-| Es wurden zwei Usability-Tests mit der Zielgruppe durchgeführt. https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt5/pages/63997316/Usability+Dossier#Usability-Testing-1[Hier] wird es genauer beschrieben.
+| Es wurden zwei Usability-Tests mit der Zielgruppe durchgeführt. https://github.com/fhnw-sgi-ip12-23vt/IP12-23vt_energy-quiz/blob/main/documentation/software(sad)/confluence-exports/usability-dossier.pdf[Hier] wird es genauer beschrieben.
 
 | Modifizierbarkeit
 | Wenn der Endkunde die Quizfragen ändern will, oder die Applikation um eine weitere Sprache erweitern will, soll dies einfach funktionieren.
 | Alle wichtigen Werte, wie die Fragen, Geräte und Räume werden in eine JSON-Datei festgehalten und während dem Betrieb der Applikation aus dieser Datei ausgelesen. Durch das editieren oder ersetzen der Datei, kann das System modifiziert werden.
-| https://gitlab.fhnw.ch/ip12-23vt/energiequiz/docu/-/blob/main/software(sad)/EnergieQuizSAD.adoc?ref_type=heads#section-building-block-view[Erklärung des Aufbaus] und https://gitlab.fhnw.ch/ip12-23vt/energiequiz/docu/-/blob/main/software(sad)/EnergieQuizSAD.adoc?ref_type=heads#user-content-auslesen-der-fragen-aus-json[Erklärung des Ablaufs]
+| https://github.com/fhnw-sgi-ip12-23vt/IP12-23vt_energy-quiz/blob/main/documentation/software(sad)/src/05_building_block_view.adoc[Erklärung des Aufbaus] und https://github.com/fhnw-sgi-ip12-23vt/IP12-23vt_energy-quiz/blob/main/documentation/software(sad)/src/06_runtime_view.adoc#auslesen-der-fragen-aus-json[Erklärung des Ablaufs]
 
 | Funktionalität
-| Es wurden zu beginn der Entwicklung https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt5/pages/63997213/Requirements[folgende Anforderungen] definiert. Diese müssen alle funktionierend implementiert werden.
+| Es wurden zu beginn der Entwicklung https://github.com/fhnw-sgi-ip12-23vt/IP12-23vt_energy-quiz/blob/main/documentation/software(sad)/confluence-exports/requirements.pdf[folgende Anforderungen] definiert. Diese müssen alle funktionierend implementiert werden.
 | Die Anforderungen wurde zu Arbeitspaketen aufgeteilt und anhand dessen abgearbeitet. Beim beenden eines Arbeitspaket wird der Code jeweils von anderen reviewed und getestet um die Korrektheit zu gewährleisten.
-| https://gitlab.fhnw.ch/ip12-23vt/energiequiz/energiequiz/-/merge_requests/31[Beispiels Merge-Request]
+|---
 
 | Nachhaltigkeit
 | Beim Material, welches verwendet wurde, wurde nicht immer das Neuste verwendet, sondern auch Altes wiederverwendet.
