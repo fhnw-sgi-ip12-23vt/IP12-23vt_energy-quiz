@@ -29,7 +29,7 @@ _<Zweck/Verantwortung>_
 Dieses Subsystem fangt die Inputs des Raspberry Pis ab, wandelt diese in Anweisungen um und sendet diese weiter.
 
 _<Schnittstelle(n)>_
-Die Anweisungen werden weiter an die Game Logik gesendet. Die genauere Schnittstelle zur Game Logik kann https://gitlab.fhnw.ch/ip12-23vt/energiequiz/docu/-/blob/main/software(sad)/EnergieQuizSAD.adoc#user-content-blackbox-game-controller[hier] gefunden werden.
+Die Anweisungen werden weiter an die Game Logik gesendet. Die genauere Schnittstelle zur Game Logik kann https://github.com/fhnw-sgi-ip12-23vt/IP12-23vt_energy-quiz/blob/main/documentation/software(sad)/src/05_building_block_view.adoc#blackbox-game-controller[hier] gefunden werden.
 
 
 ==== Blackbox: Grafische Darstellung
@@ -37,7 +37,7 @@ _<Zweck/Verantwortung>_
 Dieses Subsystem dient zur Darstellung des UIs. Darin wird dem Spieler ein visuelles Feedback zu seinen Aktionen geliefert.
 
 _<Schnittstelle(n)>_
-Dieses Subsystem erhaltet den aktuellen Spielstatus aus dem Susbsystem der Game Logik und zeigt diesen entsprechend an. Eine genauere Darstellung der Schnittstelle kann https://gitlab.fhnw.ch/ip12-23vt/energiequiz/docu/-/blob/main/software(sad)/EnergieQuizSAD.adoc#user-content-blackbox-game-controller[hier] aufgefunden werden
+Dieses Subsystem erhaltet den aktuellen Spielstatus aus dem Susbsystem der Game Logik und zeigt diesen entsprechend an. Eine genauere Darstellung der Schnittstelle kann https://github.com/fhnw-sgi-ip12-23vt/IP12-23vt_energy-quiz/blob/main/documentation/software(sad)/src/05_building_block_view.adoc#blackbox-game-controller[hier] aufgefunden werden
 
 
 ==== Blackbox: File Handler
@@ -90,7 +90,7 @@ image:../images/05-Schnittstelle-Game-UI.jpg[]
 Das System der Grafischen Darstellung verwendet ein Game-Controller Objekt um den aktuellen Spielstand im UI anzuzeigen.
 
 Schnittstelle Game Models:
-Es gibt mehre Schnittstellen zu den Game Models, welche https://gitlab.fhnw.ch/ip12-23vt/energiequiz/docu/-/blob/main/software(sad)/EnergieQuizSAD.adoc#user-content-ebene-3[hier] auf Ebene 3 genauer aufgezeigt werden.
+Es gibt mehre Schnittstellen zu den Game Models, welche https://github.com/fhnw-sgi-ip12-23vt/IP12-23vt_energy-quiz/blob/main/documentation/software(sad)/src/05_building_block_view.adoc#ebene-3[hier] auf Ebene 3 genauer aufgezeigt werden.
 
 
 ==== Blackbox: Game Models
@@ -98,7 +98,7 @@ _<Zweck/Verantwortung>_
 Dieses Subsystem dient zur Verwaltung der verschiedenen Game Objekte. Für die verschiedenen benötigten Objekte, werden in diesem Subsystem Klassen bereitgestellt. Es übernimmt die Rolle des Models vom MVC-Modell.
 
 _<Schnittstelle(n)>_
-Die verschiedenen Objekte werden vom Game-Controller verwendet um den aktuellen Spielstand darzustellen. Die genauere Darstellung der Schnittstellen wird https://gitlab.fhnw.ch/ip12-23vt/energiequiz/docu/-/blob/main/software(sad)/EnergieQuizSAD.adoc#user-content-ebene-3[hier], auf Ebene 3, aufgezeigt.
+Die verschiedenen Objekte werden vom Game-Controller verwendet um den aktuellen Spielstand darzustellen. Die genauere Darstellung der Schnittstellen wird https://github.com/fhnw-sgi-ip12-23vt/IP12-23vt_energy-quiz/blob/main/documentation/software(sad)/src/05_building_block_view.adoc#ebene-3[hier], auf Ebene 3, aufgezeigt.
 
 
 ==== Whitebox: File Handler
