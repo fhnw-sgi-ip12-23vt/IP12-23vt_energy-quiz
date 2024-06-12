@@ -1,5 +1,7 @@
 # Energiequiz
 
+Kontaktperson Software: manuel.barra@students.fhnw.ch 
+
 ## Verbinden mit dem Raspberry Pi
 Benutzernamen: pi
 
