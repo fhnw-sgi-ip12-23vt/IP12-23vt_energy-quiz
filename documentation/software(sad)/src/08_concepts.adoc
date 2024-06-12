@@ -7,7 +7,7 @@ Die Techniker bei Primeo wollen für ihre Ausstellung gewisse Teile des Spiels a
 
 Da es sich bei dem Projekt um eine Art von Quiz-Spiel handelt, gibt es einge Fragen, welche für das Quiz verwendet werden. Diese Fragen müssen je nach Niveau der Besucher eventuell angepasst werden. Denn eine Primarschulklasse und eine Sekundarschulklasse werden einen unterschiedlichen Wissensstand besitzen.
 
-Deswegen werden die Fragen für das Projekt in eine separate JSON-Datei abgelegt. Aus dieser werden die Fragen bei der Initialisierung des Spiels herausgelesen, wie in der https://gitlab.fhnw.ch/ip12-23vt/energiequiz/docu/-/blob/main/software(sad)/EnergieQuizSAD.adoc?ref_type=heads#user-content-whitebox-file-handler[Bausteinsicht Ebene 2 - FileHandling] beschrieben.
+Deswegen werden die Fragen für das Projekt in eine separate JSON-Datei abgelegt. Aus dieser werden die Fragen bei der Initialisierung des Spiels herausgelesen, wie in der https://github.com/fhnw-sgi-ip12-23vt/IP12-23vt_energy-quiz/blob/main/documentation/software(sad)/src/05_building_block_view.adoc#ebene-2[Bausteinsicht Ebene 2 - FileHandling] beschrieben.
 
 Neben den Fragen werden auch die möglichen Räume und Objekte in den Räumen in einer JSON-Datei gespeichert. Diese können also auch ohne Probleme erweitert, entfernt und angepasst werden.
 
@@ -15,9 +15,9 @@ Neben den Fragen werden auch die möglichen Räume und Objekte in den Räumen in
 
 Um mit einem Spiel wirklich interagieren zu können, wird eine Art von Benutzeroberfläche benötigt. Diese kann in vielen Formen vorhanden sein. In diesem Projekt wird das GUI mithilfe von JavaFX FXMLs und der Bibliothek FXGL umgesetzt.
 
-Für diese Benutzeroberfläche wurden zuerst Skizzen und Wireframes erstellt und anhand diesen wurde das UI für den Prototypen umgesetzt. Der Wireframe kann https://www.figma.com/proto/QHRUlDBRW92mBKoONonUb5/Untitled?node-id=11-6&starting-point-node-id=11%3A6[hier] gefunden werden.
+Für diese Benutzeroberfläche wurden zuerst Skizzen und Wireframes erstellt und anhand diesen wurde das UI für den Prototypen umgesetzt.
 
-Dieses UI wurde nach den Resultaten der Usability-Tests mit der Zielgruppe nochmals weiter überarbeitet. https://fhnw-projecttrack.atlassian.net/wiki/spaces/IP1223vt5/pages/63997316/Usability+Dossier#Entwicklung.1[Hier] ist die genaue Entwicklung des UIs zu sehen, damit die Benutzerfreundlichkeit gewährleistet werden kann.
+Dieses UI wurde nach den Resultaten der Usability-Tests mit der Zielgruppe nochmals weiter überarbeitet. https://github.com/fhnw-sgi-ip12-23vt/IP12-23vt_energy-quiz/blob/main/documentation/software(sad)/confluence-exports/usability-dossier.pdf[Hier] ist die genaue Entwicklung des UIs zu sehen, damit die Benutzerfreundlichkeit gewährleistet werden kann.
 
 === Persistenz
 
