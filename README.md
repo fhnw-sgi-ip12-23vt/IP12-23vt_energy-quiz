@@ -62,13 +62,13 @@ Danach startet das Projekt automatisch im Full Screen Modus. Falls dies nicht pa
 
 ### Quizfragen
 
-Die Quizfragen sind in 3 verschiedenen Sprachen vorhanden. Englisch, Deutsch und Französisch. Dafür gibt es [hier](https://gitlab.fhnw.ch/ip12-23vt/energiequiz/energiequiz/-/tree/main/src/main/resources/json?ref_type=heads) 3 JSON Dateien, mit den Endungen _de, _en, _fr. Jede Frage sollte in jede dieser Dateien eingefügt werden, damit die Fragen auf allen Sprachen angezeigt werden. Der Aufbau der Datei is im folgenden Kapitel beschrieben.
+Die Quizfragen sind in 3 verschiedenen Sprachen vorhanden. Englisch, Deutsch und Französisch. Dafür gibt es [hier]([https://gitlab.fhnw.ch/ip12-23vt/energiequiz/energiequiz/-/tree/main/src/main/resources/json?ref_type=heads](https://github.com/fhnw-sgi-ip12-23vt/IP12-23vt_energy-quiz/tree/main/src/main/resources/json)) 3 JSON Dateien, mit den Endungen _de, _en, _fr. Jede Frage sollte in jede dieser Dateien eingefügt werden, damit die Fragen auf allen Sprachen angezeigt werden. Der Aufbau der Datei is im folgenden Kapitel beschrieben.
 
 ### JSON-Struktur
 
 Das Projekt verwendet verschiedene JSON-Dateien, um Fragen und Assets dynamisch anzuzeigen.
 
-Die JSON-Struktur wird [hier](https://gitlab.fhnw.ch/ip12-23vt/energiequiz/energiequiz/-/blob/main/src/main/resources/json/JsonGuide.txt?ref_type=heads) erklärt, oder folgend in den Tabellen.
+Die JSON-Struktur wird [hier]([https://gitlab.fhnw.ch/ip12-23vt/energiequiz/energiequiz/-/blob/main/src/main/resources/json/JsonGuide.txt?ref_type=heads](https://github.com/fhnw-sgi-ip12-23vt/IP12-23vt_energy-quiz/blob/main/src/main/resources/json/JsonGuide.txt)) erklärt, oder folgend in den Tabellen.
 
 #### Questions.json
 | Field               | Description                                                                                                                                                  |
