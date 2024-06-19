@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="labelLeaderboard" layoutX="199.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%label.ranking" visible="false">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableView" layoutX="50.0" layoutY="146.0" prefHeight="357.0" prefWidth="700.0" style="-fx-font-size: 25;">
+        <columns>
+          <TableColumn fx:id="rankingColumn" prefWidth="142.4000244140625" text="%column.ranking" />
+          <TableColumn fx:id="teamColumn" prefWidth="277.5999755859375" text="%column.team" />
+            <TableColumn fx:id="scoreColumn" prefWidth="277.5999755859375" text="%column.score" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="50.0" layoutY="510.0" prefHeight="76.0" prefWidth="700.0" text="%label.continue">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="45.0" fitWidth="29.0" layoutX="13.0" layoutY="297.0">
+         <image>
+            <Image url="@../ui/imgBronzeMedal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="29.0" layoutX="13.0" layoutY="248.0">
+         <image>
+            <Image url="@../ui/imgSilverMedal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="29.0" layoutX="13.0" layoutY="200.0">
+         <image>
+            <Image url="@../ui/imgGoldMedal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgLeaderboard" fitHeight="76.0" fitWidth="493.0" layoutX="154.0" layoutY="35.0">
+         <image>
+            <Image url="@../ui/imgLeaderboardDe.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

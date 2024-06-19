@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>EnergieQuiz</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <slf4j.version>1.7.32</slf4j.version>
+        <pi4j.version>2.5.1</pi4j.version>
+        <maven.compiler.source>21.0.2</maven.compiler.source>
+        <maven.compiler.target>21.0.2</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- BUILD PLUGIN VERSIONS -->
+        <exec-maven-plugin.version>1.6.0</exec-maven-plugin.version>
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.github.almasb</groupId>
+            <artifactId>fxgl</artifactId>
+            <version>21</version>
+        </dependency>
+        <!-- FXGL Test dependencies -->
+        <dependency>
+            <groupId>com.github.almasb</groupId>
+            <artifactId>fxgl-test</artifactId>
+            <version>21</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20231013</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>eu.hansolo</groupId>
+            <artifactId>medusa</artifactId>
+            <version>21.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-base</artifactId>
+            <version>23-ea+3</version>
+        </dependency>
+        <!-- include Pi4J Core -->
+        <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-core</artifactId>
+            <version>${pi4j.version}</version>
+        </dependency>
+
+        <!-- include Pi4J Plugins (Platforms and I/O Providers) -->
+        <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-plugin-raspberrypi</artifactId>
+            <version>${pi4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-plugin-pigpio</artifactId>
+            <version>${pi4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-library-linuxfs</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-plugin-linuxfs</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+        <!-- Pi4J Mock Platform -->
+        <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-plugin-mock</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.5.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testfx</groupId>
+            <artifactId>testfx-junit5</artifactId>
+            <version>4.0.18</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testfx</groupId>
+            <artifactId>testfx-core</artifactId>
+            <version>4.0.18</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest</artifactId>
+            <version>2.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testfx</groupId>
+            <artifactId>testfx-core</artifactId>
+            <version>4.0.18</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- Mockito dependencies -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>5.1.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>5.1.1</version>
+            <scope>test</scope>
+        </dependency>
+
+
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M8</version>
+                <configuration>
+                    <argLine>--add-opens javafx.graphics/com.sun.javafx.application=ALL-UNNAMED</argLine>
+                </configuration>
+            </plugin>
+            <!-- JAVA COMPILER -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <release>21</release>
+                    <showDeprecation>true</showDeprecation>
+                    <showWarnings>true</showWarnings>
+                    <verbose>false</verbose>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>default-testCompile</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>testCompile</goal>
+                        </goals>
+                        <configuration>
+                            <failOnError>false</failOnError>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- DEFAULT JAR EXECUTABLE CLASS -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>${exec-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <executable>java</executable>
+                    <arguments>
+                        <argument>--module-path</argument>
+                        <argument>${project.build.directory}/distribution</argument>
+                        <argument>--module</argument>
+                        <argument>energiequiz.fxgl/energiequiz.fxgl.FXGLApp</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+
+            <!-- BUILD THE FINAL JAR FILE IN THE /target/distribution PATH -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.2</version>
+                <configuration>
+                    <outputDirectory>${project.build.directory}/distribution</outputDirectory>
+                </configuration>
+            </plugin>
+
+            <!-- COPY ANY RUNTIME SCRIPTS TO THE /target/distribution PATH  -->
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+
+                    <execution>
+                        <id>copy</id>
+                        <phase>package</phase>
+                        <configuration>
+                            <target>
+                                <echo message="Running OpenJFX download script..."/>
+                                <exec executable="/bin/bash" osfamily="unix">
+                                    <arg line="${project.basedir}/download_openjfx.sh"/>
+                                </exec>
+                                <exec executable="cmd" osfamily="windows">
+                                    <arg line="/c ${project.basedir}\download_openjfx.bat"/>
+                                </exec>
+                                <echo message="Copying distribution files..."/>
+                                <copy todir="${project.build.directory}/distribution" overwrite="true" flatten="true">
+                                    <fileset dir="assets" includes="*"/>
+                                </copy>
+                                <copy todir="${project.build.directory}/distribution/openjfx" overwrite="true">
+                                    <fileset dir="download/openjfx/extracted_files/openjfx"/>
+                                </copy>
+                                <mkdir dir="${project.build.directory}/distribution/src/main/resources/" />
+                                <copy todir="${project.build.directory}/distribution/src/main/resources/">
+                                    <fileset dir="${project.basedir}/src/main/resources" includes="**/*" />
+                                </copy>
+                                <chmod dir="${project.build.directory}/distribution" perm="ugo+rx" includes="**/*.sh"/>
+                                <exec executable="/bin/bash" osfamily="unix">
+                                    <arg line="dos2unix ${project.build.directory}/distribution/run.sh"/>
+                                    <arg line="dos2unix ${project.build.directory}/distribution/resize.sh"/>
+                                    <arg line="dos2unix ${project.build.directory}/distribution/startup.sh"/>
+                                    <arg line="dos2unix ${project.build.directory}/distribution/energyquiz.desktop"/>
+                                </exec>
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant</artifactId>
+                        <version>1.10.11</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
+            <!-- DOWNLOAD RUNTIME DEPENDENCIES -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/distribution</outputDirectory>
+                            <includeScope>runtime</includeScope>
+                            <excludeTransitive>false</excludeTransitive>
+                            <overWriteReleases>false</overWriteReleases>
+                            <overWriteSnapshots>true</overWriteSnapshots>
+                            <overWriteIfNewer>true</overWriteIfNewer>
+                            <!-- exclude platform specific dependencies, as we add the runtime in the assembly-->
+                            <excludeClassifiers>linux,win,mac</excludeClassifiers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <descriptors>
+                        <descriptor>src/assembly/assembly.xml</descriptor>
+                    </descriptors>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>all</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>3.3.1</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.puppycrawl.tools</groupId>
+                        <artifactId>checkstyle</artifactId>
+                        <version>10.14.2</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <configLocation>src/main/config/google_checks.xml</configLocation>
+                    <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                    <violationSeverity>warning</violationSeverity>
+                    <outputFile>${project.build.directory}/google_checks.xml</outputFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>validate</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>3.3.1</version>
+                <configuration>
+                    <configLocation>google_checks.xml</configLocation>
+                </configuration>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>checkstyle</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
+</project>

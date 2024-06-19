@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle fx:id="rectGerman" arcWidth="5.0" fill="#0a0b091c" height="150.0" layoutX="60.0" layoutY="250.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="150.0" />
+      <Rectangle fx:id="rectEnglish" arcHeight="5.0" arcWidth="5.0" fill="#0a0b091c" height="150.0" layoutX="250.0" layoutY="250.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="150.0" />
+      <Rectangle fx:id="rectFrench" arcHeight="5.0" arcWidth="5.0" fill="#0a0b091c" height="150.0" layoutX="440.0" layoutY="250.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="150.0" />
+      <Label fx:id="lblGerman" alignment="CENTER" layoutX="60.0" layoutY="250.0" prefHeight="150.0" prefWidth="150.0" style="-fx-font-size: 30;" text="%button.german" />
+      <Label fx:id="lblEnglish" alignment="CENTER" layoutX="250.0" layoutY="250.0" prefHeight="150.0" prefWidth="150.0" style="-fx-font-size: 30;" text="%button.english" />
+      <Label fx:id="lblFrench" alignment="CENTER" layoutX="440.0" layoutY="250.0" prefHeight="150.0" prefWidth="150.0" style="-fx-font-size: 30;" text="%button.french" />
+      <ImageView fitHeight="131.0" fitWidth="131.0" layoutX="450.0" layoutY="450.0">
+         <image>
+            <Image url="@../ui/imgRedButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="131.0" fitWidth="131.0" layoutX="70.0" layoutY="450.0">
+         <image>
+            <Image url="@../ui/imgGreenButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="131.0" fitWidth="131.0" layoutX="260.0" layoutY="450.0">
+         <image>
+            <Image url="@../ui/imgBlueButton.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

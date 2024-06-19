@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="670.0" style="-fx-opacity: 0.9; -fx-background-color: white;" styleClass="custom-dashed-border" stylesheets="@../css/custom-dashed-border.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="question" alignment="CENTER" layoutX="29.0" layoutY="25.0" prefHeight="117.0" prefWidth="621.0" style="-fx-font-size: 20;" text="Question" textAlignment="CENTER" wrapText="true" />
+      <Rectangle fx:id="rectAnswer1" arcHeight="5.0" arcWidth="5.0" fill="#090a081c" height="200.0" layoutX="14.0" layoutY="240.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle fx:id="rectAnswer2" arcHeight="5.0" arcWidth="5.0" fill="#0708061c" height="200.0" layoutX="231.0" layoutY="240.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle fx:id="rectAnswer3" arcHeight="5.0" arcWidth="5.0" fill="#0708061c" height="200.0" layoutX="451.0" layoutY="240.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label fx:id="answer1" alignment="CENTER" layoutX="14.0" layoutY="243.0" prefHeight="200.0" prefWidth="200.0" style="-fx-font-size: 20;" text="Answer1" textAlignment="CENTER" wrapText="true" />
+      <Label fx:id="answer3" alignment="CENTER" layoutX="451.0" layoutY="240.0" prefHeight="200.0" prefWidth="200.0" style="-fx-font-size: 20;" text="Answer3" textAlignment="CENTER" textFill="#0a0b09" wrapText="true" />
+      <Label fx:id="answer2" alignment="CENTER" layoutX="231.0" layoutY="240.0" prefHeight="200.0" prefWidth="200.0" style="-fx-font-size: 20;" text="Answer2" textAlignment="CENTER" wrapText="true" />
+      <ImageView fx:id="imgBlueButton" fitHeight="91.0" fitWidth="91.0" layoutX="291.0" layoutY="445.0">
+         <image>
+            <Image url="@../ui/imgBlueButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgGreenButton" fitHeight="91.0" fitWidth="91.0" layoutX="69.0" layoutY="445.0">
+         <image>
+            <Image url="@../ui/imgGreenButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgRedButton" fitHeight="91.0" fitWidth="91.0" layoutX="506.0" layoutY="445.0">
+         <image>
+            <Image url="@../ui/imgRedButton.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="circle1" fill="WHITE" layoutX="178.0" layoutY="189.0" radius="37.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle2" fill="WHITE" layoutX="333.0" layoutY="189.0" radius="37.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle3" fill="WHITE" layoutX="493.0" layoutY="189.0" radius="37.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="lblExplanation" alignment="TOP_LEFT" layoutX="14.0" layoutY="296.0" prefHeight="189.0" prefWidth="636.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ImageView fx:id="imgFalse" fitHeight="117.0" fitWidth="514.0" layoutX="67.0" layoutY="49.0" visible="false">
+         <image>
+            <Image url="@../ui/imgFalseDe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgCorrect" fitHeight="110.0" fitWidth="548.0" layoutX="50.0" layoutY="71.0" visible="false">
+         <image>
+            <Image url="@../ui/imgCorrectDe.png" />
+         </image>
+      </ImageView>
+
+   </children>
+</AnchorPane>

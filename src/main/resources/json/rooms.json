@@ -1,0 +1,313 @@
+{
+  "rooms": [
+    {
+      "name": "Schlafzimmer",
+      "background": "background_bedroom.png",
+      "assets": [
+        {
+          "device": false,
+          "filename": "bedroom_cubboard.png",
+          "posX": 60,
+          "posY": 13,
+          "width": 122,
+          "height": 154
+        },
+        {
+          "device": false,
+          "filename": "nightstand.png",
+          "posX": 493,
+          "posY": 64,
+          "width": 58,
+          "height": 74
+        },
+        {
+          "device": false,
+          "filename": "bed.png",
+          "posX": 552,
+          "posY": 28,
+          "width": 150,
+          "height": 255
+        },
+        {
+          "device": true,
+          "filename": "computer.png",
+          "posX": 60,
+          "posY": 320,
+          "width": 123,
+          "height": 102,
+          "energy": 0.8
+        },
+        {
+          "device": true,
+          "filename": "vacuum.png",
+          "posX": 180,
+          "posY": 43,
+          "width": 87,
+          "height": 120,
+          "energy": 0.8
+        },
+        {
+          "device": true,
+          "filename": "laptop.png",
+          "posX": 497,
+          "posY": 33,
+          "width": 50,
+          "height": 63,
+          "energy": 0.5
+        }
+      ]
+    },
+    {
+      "name": "Wohnzimmer",
+      "background": "background_livingroom.png",
+      "assets": [
+        {
+          "device": false,
+          "filename": "fireplace.png",
+          "posX": 545,
+          "posY": 0,
+          "width": 160,
+          "height": 199
+        },
+        {
+          "device": false,
+          "filename": "living_room_table.png",
+          "posX": 450,
+          "posY": 260,
+          "width": 174,
+          "height": 104
+        },
+        {
+          "device": false,
+          "filename": "sofa.png",
+          "posX": 61,
+          "posY": 360,
+          "width": 90,
+          "height": 180
+        },
+        {
+          "device": true,
+          "filename": "console.png",
+          "posX": 78,
+          "posY": 154,
+          "width": 102,
+          "height": 111,
+          "energy": 0.4
+        },
+        {
+          "device": true,
+          "filename": "tv.png",
+          "posX": 171,
+          "posY": 35,
+          "width": 99,
+          "height": 105,
+          "energy": 0.4
+        },
+        {
+          "device": true,
+          "filename": "lamp.png",
+          "posX": 630,
+          "posY": 465,
+          "width": 70,
+          "height": 135,
+          "energy": 0.2
+        }
+      ]
+    },
+    {
+      "name": "Küche",
+      "background": "background_kitchen.png",
+      "assets": [
+        {
+          "device": true,
+          "filename": "refrigerator.png",
+          "posX": 620,
+          "posY": 0,
+          "width": 80,
+          "height": 180,
+          "energy": 0.4
+        },
+        {
+          "device": true,
+          "filename": "stove.png",
+          "posX": 198,
+          "posY": 78,
+          "width": 102,
+          "height": 96,
+          "energy": 0.8
+        },
+        {
+          "device": false,
+          "filename": "table.png",
+          "posX": 146,
+          "posY": 292,
+          "height": 180,
+          "width": 160
+        },
+        {
+          "device": false,
+          "filename": "kitchen_counter.png",
+          "posX": 60,
+          "posY": 44,
+          "height": 139,
+          "width": 133
+        },
+        {
+          "device": false,
+          "filename": "chair_left.png",
+          "posX": 60,
+          "posY": 299,
+          "height": 126,
+          "width": 78
+        },
+        {
+          "device": false,
+          "filename": "chair_right.png",
+          "posX": 343,
+          "posY": 295,
+          "height": 126,
+          "width": 78
+        }
+      ]
+    },
+    {
+      "name": "Badezimmer",
+      "background": "background_kitchen.png",
+      "assets": [
+
+        {
+          "device": false,
+          "filename": "toilet_paper.png",
+          "posX": 140,
+          "posY": 120,
+          "height": 51,
+          "width": 51
+        },
+        {
+          "device": false,
+          "filename": "bathroom_cubboard.png",
+          "posX": 70,
+          "posY": 249,
+          "height": 150,
+          "width": 65
+        },
+        {
+          "device": false,
+          "filename": "bathroom_sink.png",
+          "posX": 547,
+          "posY": 0,
+          "height": 123,
+          "width": 153
+        },
+        {
+          "device": false,
+          "filename": "laundry_basket.png",
+          "posX": 300,
+          "posY": 260,
+          "height": 80,
+          "width": 91
+        },
+        {
+          "device": true,
+          "filename": "shower.png",
+          "posX": 570,
+          "posY": 428,
+          "width": 130,
+          "height": 172,
+          "energy": 0.5
+        },
+        {
+          "device": true,
+          "filename": "stereo.png",
+          "posX": 100,
+          "posY": 489,
+          "width": 102,
+          "height": 111,
+          "energy": 0.2
+        },
+        {
+          "device": true,
+          "filename": "toilet.png",
+          "posX": 70,
+          "posY": 70,
+          "width": 65,
+          "height": 154,
+          "energy": 0.2
+        }
+      ]
+    },
+    {
+      "name": "Keller",
+      "background": "background_livingroom.png",
+      "assets": [
+        {
+          "device": false,
+          "filename": "amp.png",
+          "posX": 57,
+          "posY": 150,
+          "height": 91,
+          "width": 73
+        },
+        {
+          "device": false,
+          "filename": "guitar.png",
+          "posX": 182,
+          "posY": 174,
+          "height": 146,
+          "width": 58
+        },
+        {
+          "device": false,
+          "filename": "chair_red_left.png",
+          "posX": 70,
+          "posY": 282,
+          "height": 156,
+          "width": 114
+        },
+        {
+          "device": false,
+          "filename": "pool_table.png",
+          "posX": 270,
+          "posY": 260,
+          "height": 156,
+          "width": 206
+        },
+        {
+          "device": false,
+          "filename": "ceues.png",
+          "posX": 642,
+          "posY": 340,
+          "height": 141,
+          "width": 57
+        },
+        {
+          "device": true,
+          "filename": "lamp.png",
+          "posX": 65,
+          "posY": 343,
+          "width": 70,
+          "height": 135,
+          "energy": 0.2
+        },
+        {
+          "device": true,
+          "filename": "arcade.png",
+          "posX": 600,
+          "posY": 0,
+          "width": 70,
+          "height": 152,
+          "energy": 1
+        },
+        {
+          "device": true,
+          "filename": "bicycle.png",
+          "posX": 171,
+          "posY": 35,
+          "width": 60,
+          "height": 104,
+          "energy": 1
+        }
+      ]
+    }
+  ]
+}

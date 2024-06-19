@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" opacity="0.57">
+         <image>
+            <Image url="@../assets/textures/startscreen_background.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblStart" alignment="CENTER" layoutX="64.0" layoutY="250.0" prefHeight="150.0" prefWidth="144.0" style="-fx-font-size: 25;" text="%button.start" />
+      <Label alignment="CENTER" layoutX="251.0" layoutY="250.0" prefHeight="150.0" prefWidth="147.0" style="-fx-font-size: 25;" text="%button.tutorial" />
+      <Label alignment="CENTER" layoutX="439.0" layoutY="249.0" prefHeight="151.0" prefWidth="151.0" style="-fx-font-size: 25;" text="%button.language" />
+       <ImageView fx:id="imgCharacter" fitHeight="168.0" fitWidth="114.0" layoutX="627.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+           <Image url="@../assets/textures/player1.png" />
+       </ImageView>
+       <ImageView fitHeight="28.0" fitWidth="27.0" layoutX="596.0" layoutY="314.0" rotate="-90.0">
+           <Image url="@../ui/imgChooseCharacterArrow.png" />
+       </ImageView>
+       <ImageView fitHeight="28.0" fitWidth="27.0" layoutX="747.0" layoutY="312.0" rotate="90.0">
+           <Image url="@../ui/imgChooseCharacterArrow.png" />
+       </ImageView>
+       <ImageView fitHeight="131.0" fitWidth="131.0" layoutX="450.0" layoutY="450.0">
+           <Image url="@../ui/imgRedButton.png" />
+       </ImageView>
+       <ImageView fitHeight="131.0" fitWidth="131.0" layoutX="70.0" layoutY="450.0">
+           <Image url="@../ui/imgGreenButton.png" />
+       </ImageView>
+       <ImageView fitHeight="131.0" fitWidth="131.0" layoutX="260.0" layoutY="450.0">
+           <Image url="@../ui/imgBlueButton.png" />
+       </ImageView>
+      <Rectangle fx:id="rectStart" arcHeight="5.0" arcWidth="5.0" fill="#0a0b091c" height="150.0" layoutX="60.0" layoutY="250.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="150.0" />
+      <Rectangle fx:id="rectTutorial" arcHeight="5.0" arcWidth="5.0" fill="#0a0b091c" height="150.0" layoutX="250.0" layoutY="250.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="150.0" />
+      <Rectangle fx:id="rectLanguage" arcHeight="5.0" arcWidth="5.0" fill="#0a0b091c" height="150.0" layoutX="440.0" layoutY="250.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="150.0" />
+       <ImageView fitHeight="76.0" fitWidth="605.0" layoutX="92.0" layoutY="60.0">
+           <Image url="@../ui/imgEnergyQuizTitle.png" />
+       </ImageView>
+   </children>
+</AnchorPane>

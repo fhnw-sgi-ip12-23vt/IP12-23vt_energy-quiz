@@ -1,0 +1,64 @@
+Dieses Dokument enthält erklärungen für questions.json und rooms.json
+
+
+questions.json:
+
+{
+  "questions": [
+    {
+      "type": 0, #Gibt an ob die Frage eine Sortierfrage oder eine Frage mit nur einer korrekten Antwort ist. 0: Standart, 1: Sortierfrage
+      "question": "Frage?", #Die Quizfrage (max 130 Zeichen)
+      "explanation": "Explanation", #Erklärung, weshalb die Antworten korrekt sortiert sind (bei Sortier-Fragen)
+      "explanation1": "exp1", #Erklärung, warum Antwort 1 falsch bzw. korrekt ist (max. 900 Zeichen)
+      "explanation2": "exp2", #Erklärung, warum Antwort 2 falsch bzw. korrekt ist (max. 900 Zeichen)
+      "explanation3": "exp3", #Erklärung, warum Antwort 3 falsch bzw. korrekt ist (max. 900 Zeichen)
+      "answer1": "Antwort1", #Erste Antwortmöglichkeit (max. 130 Zeichen)
+      "answer2": "Antwort2", #Zweite Antwortmöglichkeit (max. 130 Zeichen)
+      "answer3": "Antwort3", #Dritte Antwortmöglichkeit (max. 130 Zeichen)
+      "correct": "3" #Gibt an, welche Antwort korrekt ist
+    },
+    {
+    ...
+    }
+  ]
+}
+
+
+rooms.json:
+
+"rooms": [
+    {
+      "name": "Raum", #Names des Raums
+      "background": "Raum.png", #Dateiname für die Hintergrund-Textur
+      "assets": [ #Enthält die Assets
+        {
+          "device": false, #Gibt an, ob das Asset ein Device ist
+          "filename": "asset.png", #Dateiname für die Asset-Textur
+          "posX": 100, #Position des Assets im Raum, X-Achse
+          "posY": 100, #Position des Assets im Raum, Y-Achse
+          "width": 50, #Breite des Assets
+          "height": 50 #Höhe des Assets
+        },
+        {
+          "device": true, #Gibt an, ob das Asset ein Device ist
+          "filename": "pc.png", #Dateiname für die Asset-Textur
+          "posX": 0, #Position des Assets im Raum, X-Achse
+          "posY": 400, #Position des Assets im Raum, Y-Achse
+          "width": 115, #Breite des Assets
+          "height": 60, #Höhe des Assets
+          "energy": 20 #Energieverbrauch in kWh (nur für Devices)
+        }
+      ]
+    },
+    {
+      "name": "",
+      "background": "",
+      "assets": [
+        {
+         ...
+        }
+      ]
+    }
+    }
+  ]
+}

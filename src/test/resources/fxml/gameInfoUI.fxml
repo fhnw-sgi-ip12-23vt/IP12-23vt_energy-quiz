@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import eu.hansolo.medusa.Gauge?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="100.0" style="-fx-background-color: #729CBD;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ProgressBar fx:id="energyBar" layoutX="-27.0" layoutY="240.0" prefHeight="50.0" prefWidth="160.0" progress="1.0" rotate="-90.0" style="-fx-accent: #00FF00;" />
+      <Rectangle fx:id="room1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" layoutX="39.0" layoutY="550.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+      <Rectangle fx:id="room2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" layoutX="39.0" layoutY="510.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+      <Rectangle fx:id="room3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" layoutX="39.0" layoutY="470.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+      <Rectangle fx:id="room4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" layoutX="39.0" layoutY="430.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+      <Rectangle fx:id="room5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" layoutX="39.0" layoutY="390.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+      <Polygon fx:id="polyCurrentRoom" fill="DODGERBLUE" layoutX="92.0" layoutY="605.0" points="-1.52587890625E-5, -29.33331298828125, -20.333328247070312, -39.33331298828125, -1.9073486328125E-5, -50.6666259765625" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: black;" />
+      <Label alignment="CENTER" layoutX="3.0" layoutY="26.0" prefHeight="27.0" prefWidth="98.0" text="kWh">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ImageView fitHeight="180.0" fitWidth="60.0" layoutX="22.0" layoutY="175.0">
+         <image>
+            <Image url="@../ui/imgBattery.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutY="580.0" prefHeight="20.0" prefWidth="107.0" text="%label.rooms">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEnergyPercent" alignment="CENTER" layoutX="-4.0" layoutY="355.0" prefHeight="17.0" prefWidth="113.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Gauge fx:id="gaugeEnergyConsumption" animated="true" layoutX="4.0" layoutY="62.0" lcdDesign="DARKAMBER" prefHeight="96.0" prefWidth="91.0" skinType="SIMPLE" threshold="200.0">
+
+      </Gauge>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="8.0" layoutY="386.0">
+         <image>
+            <Image url="@../ui/imgFinishIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

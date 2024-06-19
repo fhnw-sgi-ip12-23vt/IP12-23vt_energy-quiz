@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=EnergyQuiz
+Comment=EnergyQuiz Application
+NoDisplay=false
+Exec=xterm -hold -e "cd /home/pi/EnergieQuiz-1.0-SNAPSHOT/ && sudo /home/pi/EnergieQuiz-1.0-SNAPSHOT/startup.sh"

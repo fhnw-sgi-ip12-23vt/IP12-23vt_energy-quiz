@@ -1,0 +1,81 @@
+{
+  "rooms": [
+    {
+      "name": "Schlafzimmer",
+      "background": "woodfloor.png",
+      "assets": [
+        {
+          "device": false,
+          "filename": "red_brick.png",
+          "posX": 100,
+          "posY": 100,
+          "width": 50,
+          "height": 50
+        },
+        {
+          "device": false,
+          "filename": "bed.png",
+          "posX": 500,
+          "posY": 250,
+          "width": 100,
+          "height": 150
+        },
+        {
+          "device":  false,
+          "filename":  "sofa.png",
+          "posX": 0,
+          "posY": 0,
+          "width": 90,
+          "height": 170
+        },
+        {
+          "device": true,
+          "filename": "pc.png",
+          "posX": 0,
+          "posY": 400,
+          "width": 115,
+          "height": 60,
+          "energy": 20
+        },
+        {
+          "device": true,
+          "filename": "vac.png",
+          "posX": 500,
+          "posY": 300,
+          "width": 65,
+          "height": 80,
+          "energy": 10
+        }
+      ]
+    },
+    {
+      "name": "Wohnzimmer",
+      "background": "",
+      "assets": [
+        {
+          "device": false,
+          "filename": "gold1.png",
+          "posX": 300,
+          "posY": 300,
+          "width": 50,
+          "height": 50
+        }
+      ]
+    },
+    {
+      "name": "Küche",
+      "background": "",
+      "assets": [
+        {
+          "device": true,
+          "filename": "fridge.png",
+          "posX": 100,
+          "posY": 100,
+          "width": 50,
+          "height": 80,
+          "energy": 10
+        }
+      ]
+    }
+  ]
+}
